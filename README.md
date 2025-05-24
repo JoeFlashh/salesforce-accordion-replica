@@ -12,16 +12,6 @@ Built with HTML, CSS (Grid, Flexbox, media queries), and JavaScript.
   - The relational pseudo-class `:has()` — applies styles to parent elements when a child input is checked, enabling dynamic border and content visibility without JavaScript
 - Dynamic main image updates according to the active accordion item via JavaScript
 
-## How to Run
-
-1. Clone or download this repository.
-2. Open `index.html` in any modern web browser.
-
-## Deployment
-
-This project is ready for deployment on GitHub Pages or any static hosting service.  
-Example URL: `https://your-username.github.io/your-repo-name/`
-
 ## Technologies Used
 
 - HTML5
@@ -30,4 +20,4 @@ Example URL: `https://your-username.github.io/your-repo-name/`
 
 ---
 
-Feel free to reach out if you'd like a live demo or further explanations of the implementation!
+Built by JoeFlashh
