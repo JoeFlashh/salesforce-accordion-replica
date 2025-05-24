@@ -179,6 +179,7 @@ header p {
   justify-content: space-between;
   align-items: center;
   flex-direction: row-reverse;
+  gap: 1rem;
 }
 
 /* Show blue border only when the item is checked */
@@ -217,6 +218,10 @@ header p {
     display: none;
   }
 
+  header p {
+    text-wrap: balance;
+  }
+
   .btn-wrapper button {
     width: 100%;
   }
@@ -252,10 +257,12 @@ header p {
 
   .accordion-item-title {
     font-size: 1rem;
-  }
-
-  .item-title-flex {
-    gap: 1rem;
+    white-space: normal;
+    padding-right: 36px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    flex-shrink: 1; /* allow shrinking */
+    min-width: 0; /* important for flex children to allow wrapping */
   }
 
   .accordion-item:has(input:checked) p {
