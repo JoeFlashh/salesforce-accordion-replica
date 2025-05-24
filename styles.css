@@ -254,6 +254,10 @@ header p {
     font-size: 1rem;
   }
 
+  .item-title-flex {
+    gap: 1rem;
+  }
+
   .accordion-item:has(input:checked) p {
     padding-top: 8px;
   }
