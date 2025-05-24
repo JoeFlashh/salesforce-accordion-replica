@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Salesforce Accordion Replica</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <!-- Wrapper -->
+    <div class="wrapper">
+      <img
+        src="images/img1.png"
+        alt="Lead, Contact, and Opportunity Management"
+        class="desktop-image"
+      />
+      <div>
+        <!-- Header -->
+        <header>
+          <h2>See results on day one with Starter Suite.</h2>
+          <p>
+            Our all-in-one small business solution,
+            <a href="#" class="starter-suite"><span>Starter Suite</span></a
+            >, brings sales, service and marketing tools together on a single,
+            easy-to-use app. There's nothing to install. Just enter your details
+            and get going, right in your browser.
+            <br />
+            <span class="bold-text">$25 USD/user/month</span>
+            <a href="#" class="underline-text"><span>See full pricing</span></a>
+          </p>
+        </header>
+        <div class="btn-wrapper">
+          <button>Try for free</button>
+        </div>
+        <!-- Accordion -->
+        <div class="accordion-wrapper">
+          <!-- Accordion item 1 -->
+          <section class="accordion-item" data-open-image="images/img1.png">
+            <div class="accordion-item-border">
+              <div class="item-title-flex">
+                <input
+                  type="radio"
+                  name="accordion"
+                  id="item1"
+                  class="accordion-toggle"
+                  checked
+                />
+                <label for="item1" class="accordion-item-title"
+                  >Lead, Contact, and Opportunity Management</label
+                >
+              </div>
+              <p>
+                Capture and track customer data from any source. Keep your team
+                on track with built-in deal stages. Get recommended next steps
+                to move deals along the pipeline.
+              </p>
+              <div class="mobile-image">
+                <img src="images/img1.png" alt="" />
+              </div>
+            </div>
+          </section>
+          <!-- Accordion item 2 -->
+          <section class="accordion-item" data-open-image="images/img2.png">
+            <div class="accordion-item-border">
+              <div class="item-title-flex">
+                <input
+                  type="radio"
+                  name="accordion"
+                  id="item2"
+                  class="accordion-toggle"
+                />
+                <label for="item2" class="accordion-item-title"
+                  >Email Marketing</label
+                >
+              </div>
+              <p>
+                Use AI to create segments, draft a campaign brief, build the
+                campaign, and write an email — all in just a few minutes.
+              </p>
+              <div class="mobile-image">
+                <img src="images/img2.png" alt="" />
+              </div>
+            </div>
+          </section>
+          <!-- Accordion item 3 -->
+          <section class="accordion-item" data-open-image="images/img3.png">
+            <div class="accordion-item-border">
+              <div class="item-title-flex">
+                <input
+                  type="radio"
+                  name="accordion"
+                  id="item3"
+                  class="accordion-toggle"
+                />
+                <label for="item3" class="accordion-item-title"
+                  >Service Case Management</label
+                >
+              </div>
+              <p>
+                Unify all your support channels with a single, shared view.
+                Route cases to the best agent or technician for the job, set
+                priorities, and close more cases.
+              </p>
+              <div class="mobile-image">
+                <img src="images/img3.png" alt="" />
+              </div>
+            </div>
+          </section>
+          <!-- Accordion item 4 -->
+          <section class="accordion-item" data-open-image="images/img4.png">
+            <div class="accordion-item-border">
+              <div class="item-title-flex">
+                <input
+                  type="radio"
+                  name="accordion"
+                  id="item4"
+                  class="accordion-toggle"
+                />
+                <label for="item4" class="accordion-item-title"
+                  >Reporting and Analytics</label
+                >
+              </div>
+              <p>
+                Get a real-time view of your business with custom dashboards.
+                Get pre-loaded data to start forecasting from day one, then
+                tailor it to your business over time.
+              </p>
+              <div class="mobile-image">
+                <img src="images/img4.png" alt="" />
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

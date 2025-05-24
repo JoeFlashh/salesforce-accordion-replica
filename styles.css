@@ -1,0 +1,301 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  font-family: Arial, sans-serif;
+  display: grid;
+  justify-content: center;
+  align-content: start;
+  padding: 10vh 0;
+}
+
+.wrapper {
+  max-width: 1280px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+.wrapper img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
+    0 8px 10px -6px rgb(0 0 0 / 0.1);
+}
+
+h2 {
+  font-size: 30px;
+  margin-bottom: 16px;
+  color: #032d60;
+}
+
+header {
+  margin-bottom: 48px;
+}
+
+.starter-suite {
+  color: #0b5cab;
+  text-decoration: underline;
+}
+.starter-suite:hover {
+  color: #032d60;
+  text-decoration: none;
+}
+
+/* Focus styles for keyboard navigation */
+.starter-suite:focus,
+.underline-text:focus {
+  outline: 2px solid #0176d3;
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+header p {
+  font-size: 17px;
+  letter-spacing: 0.025em;
+  line-height: 28px;
+  color: rgba(24, 24, 24, 0.889);
+  font-weight: 100;
+}
+
+.bold-text {
+  color: #181818;
+  font-weight: 700;
+}
+
+.underline-text {
+  font-weight: 700;
+  color: #0b5cab;
+  text-decoration: underline;
+}
+
+.underline-text:hover {
+  font-weight: 700;
+  color: #032d60;
+  text-decoration: none;
+}
+
+.btn-wrapper button {
+  padding: 12px 32px;
+  background-color: #0176d3;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 4px;
+  outline: none;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #0176d3;
+  line-height: 24px;
+}
+
+.btn-wrapper button:hover {
+  background-color: #032d60;
+  border-color: #032d60;
+}
+
+.btn-wrapper {
+  margin-bottom: 48px;
+}
+
+/* Enhanced focus styles for button */
+.btn-wrapper button:focus {
+  outline: 2px solid #0176d3;
+  outline-offset: 2px;
+}
+
+/* Accordion  */
+
+.accordion-wrapper {
+  border-left: 1px solid #c9c9c9;
+}
+
+.accordion-item {
+  padding-bottom: 36px;
+}
+
+.accordion-item:last-child {
+  padding-bottom: 0;
+}
+
+/* Hide blue border */
+.accordion-item-border {
+  border-left: 4px solid transparent;
+  padding-left: 24px;
+}
+
+.accordion-toggle {
+  display: none;
+  cursor: pointer;
+}
+
+.accordion-item-title {
+  font-weight: 700;
+  font-size: 20px;
+  color: #032d60;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  position: relative;
+}
+
+.accordion-item-title:hover {
+  color: #0176d3;
+}
+
+.accordion-item p {
+  color: #181818;
+  opacity: 85%;
+  font-weight: 200;
+  padding-top: 8px;
+  letter-spacing: 0.025em;
+  color: rgba(24, 24, 24, 0.889);
+  font-weight: 100;
+  max-height: 0;
+  overflow: hidden;
+  padding-bottom: 0;
+}
+
+.mobile-image {
+  display: none;
+}
+
+.accordion-toggle .accordion-item-title {
+  cursor: pointer;
+}
+
+.item-title-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+/* Show blue border only when the item is checked */
+.accordion-item:has(input:checked) .accordion-item-border {
+  border-left: 4px solid #0176d3;
+}
+
+.accordion-item input:checked + label {
+  color: #0176d3;
+}
+
+.accordion-item:has(input:checked) p {
+  max-height: 500px;
+}
+
+/* Media queries */
+
+/* Styles applied when screen size is 1300px or less */
+@media screen and (max-width: 1300px) {
+  body {
+    padding: 2.5rem 1.5rem;
+  }
+}
+
+/* Styles applied when screen size is 768px or less */
+@media screen and (max-width: 768px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .desktop-image {
+    display: none;
+  }
+
+  .mobile-image {
+    display: none;
+  }
+
+  .btn-wrapper button {
+    width: 100%;
+  }
+
+  .accordion-wrapper {
+    border-left: 0px;
+  }
+
+  .accordion-item-border {
+    padding-left: 0px;
+  }
+
+  .accordion-item p {
+    padding-top: 0px;
+  }
+
+  .accordion-item {
+    border-bottom: 1px solid #c9c9c9;
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+  }
+
+  .accordion-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .accordion-toggle {
+    display: none;
+    cursor: pointer;
+  }
+
+  .accordion-item-title {
+    font-size: 1rem;
+  }
+
+  .accordion-item:has(input:checked) p {
+    padding-top: 8px;
+  }
+
+  .accordion-item:has(input:checked) .mobile-image {
+    display: block;
+    padding-top: 24px;
+  }
+
+  .accordion-item:has(input:checked) .accordion-item-border {
+    border-left: 0px;
+  }
+
+  /*  */
+
+  /* Add visual indicator for expanded state */
+  .accordion-item-title::after {
+    content: "+";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+    font-weight: 200;
+    transition: transform 0.2s ease;
+    background-color: #d8edff;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #032d60;
+  }
+
+  .accordion-toggle:checked + .accordion-item-title::after {
+    content: "−";
+    transform: translateY(-50%) rotate(0deg);
+  }
+
+  .accordion-item-title:hover::after {
+    background-color: #0176d3;
+    color: #ffffff;
+  }
+}
