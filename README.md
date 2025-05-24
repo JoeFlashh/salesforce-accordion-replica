@@ -16,7 +16,7 @@ Built with HTML, CSS (Grid, Flexbox, media queries), and JavaScript.
 
 - HTML5
 - CSS3 (Grid, Flexbox, transitions, media queries, advanced selectors)
-- JavaScript (vanilla)
+- JavaScript
 
 ---
 
